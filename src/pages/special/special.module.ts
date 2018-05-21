@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { MenuPage } from './menu';
+import { SpecialPage } from './special';
 
 @NgModule({
   declarations: [
-    MenuPage,
-    
+    SpecialPage,
   ],
   imports: [
-    IonicPageModule.forChild(MenuPage),
+    IonicPageModule.forChild(SpecialPage),
   ],
 })
-export class MenuPageModule {}
+export class SpecialPageModule {}
