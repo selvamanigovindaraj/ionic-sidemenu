@@ -22,8 +22,9 @@ export class SlidesPage {
     let currentIndex = this.slides.getActiveIndex();
     if(currentIndex==3){
       let _app= this.app.getRootNav();
-      this.slides.stopAutoplay();
-      _app.push('MenuPage')
+      // this.slides.stopAutoplay();
+      _app.push('SignupPage')
+      // this.navCtrl.setRoot('SignupPage');
     }
   }
 

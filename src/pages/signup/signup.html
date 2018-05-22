@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Signup Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="user_Name" clearInput></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" clearInput></ion-input>
+      </ion-item>
+     <br>
+     <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime displayFormat="DD-MM-YYYY" [(ngModel)]="today"></ion-datetime>
+      </ion-item>
+      <button ion-button block (click)="doSubmit()">Signup</button>
+    </ion-list>
+</ion-content>
