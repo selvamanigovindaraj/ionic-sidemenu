@@ -7,16 +7,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { LoginPageModule } from '../pages/login/login.module';
-import { DatePickerModule } from 'ion-datepicker';
+import { HttpClientModule } from '@angular/common/http'; 
+import { HttpModule } from '@angular/http';
+// import { DatePicker } from '@ionic-native/date-picker';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,  
   ],
   imports: [
     BrowserModule,
     LoginPageModule,
-    DatePickerModule,
+    // DatePicker,
+    HttpClientModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+// import { DatePicker } from '@ionic-native/date-picker';
 /**
  * Generated class for the SignupPage page.
  *
@@ -18,6 +18,7 @@ export class SignupPage {
   user_Name;
   password;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // private datePicker: DatePicker
     this.today = new Date().toDateString();
     
   }
@@ -27,5 +28,16 @@ export class SignupPage {
     console.log(this.user_Name);
     console.log(this.password);
   }
+
+  // datepicker(){
+  //   this.datePicker.show({
+  //     date: new Date(),
+  //     mode: 'date',
+  //     androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+  //   }).then(
+  //     date => console.log('Got date: ', date),
+  //     err => console.log('Error occurred while getting date: ', err)
+  //   );
+  // }
 
 }

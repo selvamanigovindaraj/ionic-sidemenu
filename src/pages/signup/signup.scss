@@ -1,3 +1,39 @@
 page-signup {
 
 }
+.login-background{
+    // background-color: rgb(240, 62, 62) 
+    background-image: url('../assets/imgs/welcome_screen3.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    // margin-top: 50px;
+    }
+    .inputstyle{
+        background: transparent;
+    }
+    .labelstyle{
+        color: black;
+    }
+    .layer {
+        box-shadow: inset 0 0 0 1000px rgba(3, 95, 95, 0.7686274509803922);
+        width: 100%;
+        height: 100%;
+     }
+     .typetextstyle{
+         color: white;
+     }
+     clearInput{
+        color: white;
+     }
+     .logo{
+      
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+       
+     }
+   
