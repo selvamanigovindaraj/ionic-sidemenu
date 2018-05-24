@@ -1,13 +1,53 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="mycolor">
+        <img src="../assets/imgs/logo2.png" float-right class="navbarlogo" >
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>tab2</ion-title>
+      <ion-title>My Profile</ion-title>
     </ion-navbar>
   
   </ion-header>
 
 <ion-content padding>
-
+    <ion-grid>
+        <ion-row margin-top>
+          <ion-col col-8>
+            <h2 >Hello,</h2>
+            <h2>Vignesh Shan</h2>
+            <p>View and Edit your Profile</p>
+          </ion-col>
+          <ion-col col-4>
+              <img src="../assets/imgs/profile.png">
+          </ion-col>
+          
+        </ion-row>
+        <ion-row>
+          <ion-col col-10 margin-top text-capitalize>
+            <h4 (click)="open_aboutpg()">about me</h4>
+          </ion-col>
+          <ion-col col-2  margin-top>
+              <ion-icon name="person"></ion-icon>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-10 margin-top text-capitalize>
+              <h4>address</h4>
+            </ion-col>
+            <ion-col col-2  margin-top>
+                <ion-icon name="pin"></ion-icon>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-10 margin-top text-capitalize>
+                <h4 (click)="open_sportinterestpg()">sports intrested in</h4>
+                <p>add or modify your sports preference</p>
+              </ion-col>
+              <ion-col col-2  margin-top>
+                  <ion-icon name="logo-dribbble"></ion-icon>
+                </ion-col>
+            </ion-row>
+      
+       
+      </ion-grid>
 </ion-content>

@@ -1,9 +1,10 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="mycolor">
+      <h5 float-right color="danger">Edit</h5>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>Special</ion-title>
+      <ion-title>About Me</ion-title>
     </ion-navbar>
   
   </ion-header>
@@ -11,5 +12,42 @@
 
 
 <ion-content padding>
-This is special page
+    <ion-grid>
+        <ion-row margin-top>
+          <ion-col col-8>
+            <h2>Vignesh Shan</h2>
+            <p>coach</p>
+          </ion-col>
+          <ion-col col-4>
+              <img src="../assets/imgs/profile.png">
+          </ion-col>
+      </ion-row>
+      <ion-row >
+          <ion-col col-12>
+            <h4>Email</h4>
+            <p>ebraintechonlogies@gmail.com</p>
+          </ion-col>
+          <!-- <ion-col col-12>
+          
+          </ion-col> -->
+      </ion-row>
+      <ion-row >
+          <ion-col col-12>
+            <h4>Phone No</h4>
+            <p>9876543210</p>
+          </ion-col>
+          <!-- <ion-col col-12>
+          
+          </ion-col> -->
+      </ion-row>
+      <ion-row >
+          <ion-col col-12>
+            <h4>Date of Birth</h4>
+            <p>Oct 10 1994</p>
+          </ion-col>
+          <!-- <ion-col col-12>
+         
+          </ion-col> -->
+      </ion-row>
+  </ion-grid>
 </ion-content>

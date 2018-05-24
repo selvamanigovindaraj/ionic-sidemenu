@@ -10,6 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class TabsPage {
   tab1Root: any = 'Tab1Page';
   tab2Root: any = 'Tab2Page';
+  tab3Root: any = 'Tab3Page';
   myIndex: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
