@@ -2,6 +2,8 @@ import { Tab2Page } from './../tab2/tab2';
 import { Tab1Page } from './../tab1/tab1';
 import { TabsPage } from './../tabs/tabs';
 import {Tab3Page} from '../tab3/tab3';
+import {Tab4Page} from '../tab4/tab4';
+import {Tab5Page} from '../tab5/tab5';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
 
@@ -25,7 +27,10 @@ export class MenuPage {
   pages: PageInterface[] = [
     { title: 'Home', pageName: 'TabsPage', tabComponent: 'Tab1Page', index: 0, icon: 'home' },
     { title: 'My Profile', pageName: 'TabsPage', tabComponent: 'Tab2Page', index: 1, icon: 'contact' },
-    { title: 'Tab 3', pageName: 'TabsPage', tabComponent: 'Tab3Page', index: 2, icon: 'contacts' },
+    { title: 'Select Service', pageName: 'TabsPage', tabComponent: 'Tab3Page', index: 2, icon: 'apps' },
+    { title: 'Deals', pageName: 'TabsPage', tabComponent: 'Tab4Page', index: 3, icon: 'cube' },
+    { title: 'Notifications', pageName: 'TabsPage', tabComponent: 'Tab5Page', index: 4, icon: 'notifications' },
+    
    
   ];
   constructor(public navCtrl: NavController, public navParams: NavParams) {

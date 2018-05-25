@@ -1,4 +1,31 @@
 page-tab3 {
 
-   
+    $height:200px;
+    .sportimgs{
+        height: $height/2;
+    }
+
+ .addmoresport{
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+.plusicons{
+    font-size: 20px;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    margin-right: 10px;
+    color: white;
+}
+
+
+$width:100px;
+.logo{
+    width: $width/2;
+}
 }
